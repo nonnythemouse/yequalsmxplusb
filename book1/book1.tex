@@ -1,0 +1,97 @@
+\documentclass[12pt]{book}
+\usepackage[width=4.375in, height=7.0in, top=1.0in, papersize={5.5in,8.5in}]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tipa}
+%\usepackage{txfonts}
+\usepackage{textcomp}
+%\usepackage{amsthm}
+%\usepackage{array}
+%\usepackage{xy}
+\usepackage{fancyhdr}
+
+\usepackage{hyperref}
+
+\usepackage{wallpaper} % Required for setting background images (title page)
+
+\usepackage[vcentermath]{youngtab}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}
+\setlength{\footskip}{0in}
+\renewcommand{\footruleskip}{0pt}
+\fancypagestyle{plain}{%
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+}
+%
+%\parindent 0in
+\parskip 0.05in
+
+\title{$y=mx+b$} % Book title
+\author{T. Perry} % Author
+%\newcommand{\edition}{Second Edition} % Book edition
+
+\input{../chapters/defs.tex}
+
+\begin{document}
+
+%\frontmatter
+
+
+%----------------------------------------------------------------------------------------
+%       TITLE PAGE
+%----------------------------------------------------------------------------------------
+\input{../chapters/titlepage.tex}
+
+%\newpage % Make sure the following content is on a new page
+
+%----------------------------------------------------------------------------------------
+%       COYPLEFT
+%----------------------------------------------------------------------------------------
+
+%\input{../chapters/copyleft.tex}
+
+%----------------------------------------------------------------------------------------
+%       TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\tableofcontents % Prints the table of contents
+
+%----------------------------------------------------------------------------------------
+%       INTRODUCTION SECTION
+%----------------------------------------------------------------------------------------
+
+\input{../chapters/intro.tex}
+
+%\mainmatter
+
+%----------------------------------------------------------------------------------------
+%       BOOK PART
+%----------------------------------------------------------------------------------------
+
+\part{The First Part}
+
+%----------------------------------------------------------------------------------------
+%       CHAPTER ONE
+%----------------------------------------------------------------------------------------
+
+\input{../chapters/adamHiggsSpeach.tex}
+
+\input{../chapters/aliceIntro.tex}
+
+\input{../chapters/elsaPlayground.tex}
+
+\input{../chapters/solutions.tex}
+
+
+\end{document}

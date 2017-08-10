@@ -1,0 +1,102 @@
+
+\chapter*{Solutions to selected problems}
+These are from Alice's chapter in the beginning of the book.\\
+
+Q$1$)\\
+
+Q$2$)\\
+
+Q$3$)\\
+
+Q$4$a-k)\\
+Bob, yes, in a way, no, no, no, no, escaping mortality, yes, no, not literally at least.\\
+
+Q$5$)\\
+I'm not going to explain the rules for computations with the Young tableaux or Dirac bra-ket notation. If you think these things look cool, you should learn about them and then see if you understand this. It's actually not that complicated I swear.. but I'll write the solutions as though you are comfortable with the notation. If you're a student and this is your homework problem, I got your back.\\
+
+Though not explicitly stated, we will assume particles of spin $1/2$. We want to show that $2\otimes 2\otimes 2 = 2\oplus 2 \oplus 4$ so we will begin by examining the term $2\otimes 2$.
+
+\begin{align*}
+2\otimes 2 &= \yng(1)\otimes\yng(1)\\
+           &= \yng(2)\oplus\yng(1,1)\\
+           &= \young(aa)\oplus\young(ab)\oplus\young(bb)\oplus\young(a,b)\\
+           &= 3\oplus 1 
+\end{align*}
+
+This gives us $2\otimes 2\otimes 2 = (3\oplus 1) \otimes 2$ and we will use the distributive property to find the terms $3\otimes 2$ and $1\otimes 2$. We expand each of these.
+
+\begin{align*}
+3\otimes 2 &= \yng(2)\otimes\yng(1)\\
+           &= \yng(3)\oplus\yng(2,1)\\
+           &= \young(aaa)\oplus\young(aab)\oplus\young(abb)\oplus\young(bbb)\\
+           &\oplus \young(aa,b)\oplus\young(ab,b)\\
+           &= 4\oplus 2 \\
+~\\
+1\otimes 2 &= \yng(1,1)\otimes\yng(1)\\
+           &= \yng(2,1)\\
+           &= \young(aa,b)\oplus\young(ab,b)\\
+           &= 2
+\end{align*}
+where $\yng(1,1,1)$ is not possible because one can not fully antisymmetrize three particles that have only two linearly independent states. Putting this all together we have
+
+{\begin{align*}
+2\otimes 2\otimes 2 &= 2\oplus 2 \oplus 4 \\
+%\Yvcentermath1
+\yng(1)\otimes\yng(1)\otimes\yng(1) &=
+\yng(2,1)\oplus\yng(2,1)\oplus\yng(3)\quad.
+\end{align*}}\\
+
+\mymark
+
+%  b.\\
+%  The sense in which $\yng(1)=2$ is evident when expressed in Dirac notation as
+%  \begin{align*}
+%  \young(a)= \ket{\uparrow} = \ket{\frac{1}{2},\frac{1}{2}}, \qquad \young(b)=\ket{\downarrow} = \ket{\frac{1}{2},-\frac{1}{2}} \quad.
+%  \end{align*}
+%  
+%  To state this explicitly then, the basis of $2\otimes 2\otimes 2$ are the internal states of the individual particles and the basis of $2\oplus 2\oplus 4$ are the composite states of the three-particle combinations. We can therefore read off our solutions from the tableaux constructed in part a. The coefficients are the standard Clebsch-Gordan coefficients which can be read from a table or calculated using $S_\pm \ket{s,m}=\sqrt{s(s+1)-m(m\pm 1)}\ket{s,m\pm 1}$. We again start with $2\otimes 2$ and use the subscripts $s$, $a$ to indicate the particles are symmetrized or antisymmetrized.
+%  
+%  \begin{align*}
+%  2\otimes 2 &= \young(aa)\oplus\young(ab)\oplus\young(bb)\oplus\young(a,b) & {} & {} \\
+%  \young(aa)  &= \ket{\uparrow \uparrow}_s  = \ket{\uparrow \uparrow}                                                                 &=& \ket{1,1}  \\
+%  \young(ab)  &= \ket{\uparrow \downarrow}_s  = \frac{1}{\sqrt{2}}\left(\ket{\uparrow \downarrow} + \ket{\downarrow \uparrow} \right) &=& \ket{1,0}  \\
+%  \young(bb)  &= \ket{\downarrow \downarrow}_s  = \ket{\downarrow \downarrow}                                                         &=& \ket{1,-1} \\
+%  \young(a,b) &= \ket{\uparrow \downarrow}_a = \frac{1}{\sqrt{2}}\left(\ket{\uparrow \downarrow} - \ket{\downarrow \uparrow} \right)  &=& \ket{0,0} 
+%  \end{align*}
+%  
+%  We again take the $\otimes$ product with $\yng(1)$ and start by examining product with the singlet configuration, $\yng(1,1)$. We will label boxes such that $\young(\alpha \beta, \gamma)$ corresponds to $\ket{\alpha \beta \gamma}_m$ where the subscript $m$ indicates the mixed symmetry of symmetrizing $\alpha$ and $\beta$ and antisymmetrizing $\alpha$ and $\gamma$.
+%  
+%  \begin{align*}
+%  2\otimes 1   &= \young(aa,b)\oplus\young(ab,b) & {} & {}\\
+%  \young(aa,b) &= 
+%  \end{align*}
+%  
+%  \mypause \mypause \mypause
+%  
+%  
+%  
+%  
+%  triplet configuration, $\yng(2)$, which has $m=1$ for all states. 
+%  
+%  \begin{align*}
+%  3\otimes 2  &= \young(aaa)\oplus\young(aab)\oplus\young(abb)\oplus\young(bbb)\\
+%              &  \oplus \young(aa,b)\oplus\young(ab,b)\\
+%  \end{align*}
+%  
+%  We start here with the fully symmetric states.
+%  \begin{align*}
+%  \young(aaa) = 
+%  \end{align*}
+%  
+%  % \begin{align*}
+%  % 2\otimes 2 &= \left\{ 
+%  %              \begin{array}{rl}
+%  %               \young(aa) & A \\
+%  %               \young(ab) & A \\
+%  %               \young(bb) & A \\
+%  %               \young(a,b) & A
+%  %              \end{array} \right.    
+%  % \end{align*}
+
+
+

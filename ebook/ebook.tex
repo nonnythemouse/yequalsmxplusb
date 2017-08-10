@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% eBook 
+% LaTeX Template
+% Version 1.0 (29/12/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Luis Cobo (luiscobogutierrez@gmail.com) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS AND INFORMATION
+%----------------------------------------------------------------------------------------
+
+\documentclass[oneside,11pt]{memoir} % Font size
+
+\input{structure.tex} % Include the file that specifies the document structure and layout
+
+\input{../chapters/defs.tex} % my definitions
+
+\title{$y=mx+b$} % Book title
+\author{T. Perry} % Author
+%\newcommand{\edition}{Second Edition} % Book edition
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\input{../chapters/titlepage.tex}
+
+\newpage % Make sure the following content is on a new page
+
+%----------------------------------------------------------------------------------------
+%       COYPLEFT
+%----------------------------------------------------------------------------------------
+
+%\input{../chapters/copyleft.tex}
+
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\tableofcontents % Prints the table of contents
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION SECTION
+%----------------------------------------------------------------------------------------
+
+\input{../chapters/intro.tex}
+
+%----------------------------------------------------------------------------------------
+%	BOOK PART
+%----------------------------------------------------------------------------------------
+
+\part{The First Part}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER ONE
+%----------------------------------------------------------------------------------------
+
+\input{../chapters/adamHiggsSpeach.tex}
+
+\input{../chapters/aliceIntro.tex}
+
+\input{../chapters/elsaPlayground.tex}
+
+\input{../chapters/solutions.tex}
+
+\end{document}
