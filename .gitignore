@@ -1,7 +1,7 @@
 
-.aux
-.log
-.out
-.toc
-.zip
-.jpg
+*.aux
+*.log
+*.out
+*.toc
+*.zip
+*.jpg
