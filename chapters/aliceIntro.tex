@@ -90,11 +90,13 @@ She read the question again.
 
 Then she checked the math, $8=8$. Yep, works. But what was this even talking about? This wasn't stat mech, this was quantum. Group theory. The important stuff. The interesting stuff, once you got it. Math. 
 
-She looked at the $\oplus$ symbols and only ever remembered seeing them in math classes, the kind which had to invent new symbols for their concepts, and got you to think about what numbers really were and not just how to use them. It was the symbol you used when you wanted to say two things were to be thought of as together, but their components or their properties didn't combine, or at least not simply. So this problem was somehow saying that she needed to show that multiplying three pairs together was the same as adding two pairs and a quadruple. Ok so she understood what she was being asked to do. Maybe? Either way, it didn't really help.
+She looked at the $\oplus$ symbols and only ever remembered seeing them in math classes, the kind which had to invent new symbols for their concepts, and got you to think about what numbers really were and not just how to use them. It was the symbol you used when you wanted to say two things were to be thought of added, but since they weren't numbers you were adding, there was some other rule for what addition meant this time. So this problem was somehow saying that she needed to show that multiplying three pairs together was the same as adding two pairs and a quadruple. Ok so she understood what she was being asked to do. Maybe? Either way, it didn't really help.
 
 Wikipedia was good. Textbooks were better. This didn't stop anyone from going to Wikipedia first but as Alice progressed further and further into grad school, she had noticed that the articles she needed got shorter and shorter, or just wouldn't be there at all. Mostly they would try different keyword combinations on different search engines, looking for pdfs of lecture notes or homework solutions from other graduate physics departments. Lecture notes where they worked out your problem as an example were the best, but homework solutions were pretty good too, though it seemed like professors deliberately left out most of the steps, showing only the concept, stating that you should simply rotate your reference frame so the cross terms vanish, do your calculation, and then rotate back. Simply.
 
-Finding one of those was a gem, but it was only once or twice that anyone came across the actual problem they were working on. And this wasn't really cheating, or at least nobody treated it like it was, professors included, though they never said it explicitly. It was almost research, developing the skills to find the resources you needed to answer the question at hand. No doubt the professors would have preferred it if they could all have just gone straight from their lecture notes to the problem sets, maybe with a few textbooks in there like they had used when they were students, but if you could understand how to solve the problem by the time the homework was due, then you had learned what they wanted you to learn and that was the whole point of homework in the first place. Plus grades really didn't matter unless you were failing out, and nobody was.
+Finding one of those was a gem, but it was only once or twice that anyone came across the actual problem they were working on. And this wasn't really cheating, or at least nobody treated it like it was, professors included, though they never said it explicitly. It was almost research, developing the skills to find the resources you needed to answer the question at hand. 
+
+No doubt the professors would have preferred it if they could all have just gone straight from their lecture notes to the problem sets, maybe with a few textbooks in there like they had used when they were students, but if you could understand how to solve the problem by the time the homework was due, then you had learned what they wanted you to learn and that was the whole point of homework in the first place. Plus grades really didn't matter unless you were failing out, and nobody was.
 
 \mypause
  
@@ -183,9 +185,11 @@ Each of the tests on the board ran separately, and made their own output files, 
 
 Alice had too now though, and she copied the tarball to her directory since it wasn't that big, just a few kilobites, and she didn't want to accidentally destroy their original files. Adam had also told her early on that nobody ever remembered the flags you were supposed to use when extracting a tar.gz file, but the letters had stuck in her memory. {\ttfamily z} was for zip file, {\ttfamily x} for extract, {\ttfamily c} for compress, {\ttfamily v} for verbose mode so that it printed to the teminal everything it did, and {\ttfamily f} was for something. Force maybe? Either way, you used that one too, so the commands were {\ttfamily tar -zcvf output.tar.gz inputfile1 inputfile2 ..} to compress and  {\ttfamily tar -zxvf tarball.tar.gz} to extract, and Alice appreciated that all of the important flags were on the bottom left row of the keyboard, all in a row. Still, she had a webpage with the flags bookmarked, and a text file with the tar/untar and ssh commands saved on her desktop.
 
+\mypause
+
 Adam came over while she was trying to figure out how she could possibly look at the hundreds of logs that had been generated, bracelet off and hanging from an improvised wire hook twisted onto the rack in the middle of the room. Now she had his full attention and they checked a few random logs from a range of different power cycles, including the final one, manually ran a few different tests that weren't included in the script, and concluded that the board had likely passed with flying colors but that they should write a script to go through the logs and make sure. "This means, of course, that we have a procedure now. So the next step is to test the rest of the boards like this." 
 
-Bah. Of course. Of course that was the next step, to test the rest of them and not just this one. "Of course," Alice agreed. So she set up the next board, opened the script and modified line 5 to read {\ttfamily outname =} {\ttfamily  pcycle100x\_\-board01\_\-2008\_04\_30.tar.gz} and started it running.
+Bah. Of course. Of course that was the next step, to test the rest of them and not just this one. "Of course," Alice agreed. So she set up the next board, opened the script and modified line 5 to read {\ttfamily outname =} {\ttfamily  'pcycle100x\_\-board01\_\-2008\_04\_30.tar.gz'} and started it running.
 
 Adam began packing up to leave and so did Alice. "Thanks for getting this going today, I think the boards are looking good," he said, stopping in the doorway. "And also, can you make sure Elsa knows not to unplug the supplies? Thanks, ok, have a good weekend."
 
@@ -197,11 +201,13 @@ Upstairs, there were now five of them working together, and Daniel had had an in
 
 Maybe not exactly the real world. These were the equations to describe what would happen in a universe containing just this one electron and just this one electric field, but the important thing was that the laws of physics in this almost empty universe were hopefully the same as the laws of physics in the real one, it just didn't have as much stuff in it that might complicate things. 
 
-They were all hungry by now though, and Nate promised to email Alice the pictures he had taken of the chalkboard as they worked through the tedious integrals in the other room. "Thanks Nate."
+They were all hungry by now though, and Nate promised to email Alice the pictures he had taken of the chalkboard as they worked through the integrals in the other room. "Thanks Nate."
 
-\mypause
+\mymark
 
-Noboty 
+%Physicists in a grouop are incapible of making decisions. Big decisions, yes, or maybe sometimes, but trivial decisions like where to go for dinner, no. It's probably some combination of shyness and their willingness to accept that they genuinely weren't sure what they wanted, thought Alice, too many variables but still worth figuring out. Or maybe they're just used to there always being someone else with a stronger opinion than their own to lead the pack. Either way, she had seen it happen before where they had decided to go for dinner and then spent then next forty five minutes in the hallway outside their offices. 
+%
+%They ended up at Doty's, at Alice's suggestion, which had good hamburgers and great cheese curds, a midwestern delacacy that was new to Alice when she first arrived in Madison. The closest thing they have in Pennslyvania are maybe mozzarella sticks, battered and deep fried cheese, but instead of mozzarella, these were unpressed cheddar curds that came with a variety of sauces, golden brown, hot, and covered your fingers with grease. They also had a good collection of beers on tap, another thing Alice had quickly learned Madison is known for, 
 
 %Goes to terrace, too cold for anyone else. Just her and her good friend Jae Jook Sakurai. J. J. Sakurai was a physicist. He died in 1982 but his textbook Modern Quantum Mechanics lives on. 
 
